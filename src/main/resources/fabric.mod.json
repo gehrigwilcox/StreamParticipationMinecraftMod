@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "streamparticipation",
+  "version": "${version}",
+  "name": "Stream Participation",
+  "description": "Allow Twitch Viewers to interact with your game!",
+  "authors": [
+    "lougehrig10"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/StreamParticipation/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.lougehrig10.streamparticipation.server.StreamParticipationCommon"
+    ],
+    "client": [
+      "io.github.lougehrig10.streamparticipation.client.StreamParticipationClient"
+    ]
+  },
+  "mixins": [
+    "StreamParticipation.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.6",
+    "fabric": "*",
+    "minecraft": "*"
+  }
+}
